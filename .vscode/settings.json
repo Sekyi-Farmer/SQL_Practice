@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Mydatabase",
+            "database": "school.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "pratice",
+            "database": "${workspaceFolder:SQL}/school.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "keys",
+            "database": "Foreign_keys.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
