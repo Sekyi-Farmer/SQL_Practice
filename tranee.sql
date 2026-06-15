@@ -46,3 +46,4 @@ INSERT INTO tranee(name,age)
     age INTEGER CHECK ( age >= 21),
     country DEFAULT 'Ghana'
   );
+  SELECT * FROM tranee WHERE age > (SELECT AVG(age) FROM students);
