@@ -16,4 +16,7 @@ SELECT Course,AVG(Age) AS  Average_age FROM players GROUP BY Course;
 SELECT * FROM players;
 SELECT Course, MIN(age) AS Smallest_age FROM players GROUP BY Course;
 SELECT Course, COUNT(*) AS Total_Num FROM players  WHERE Age > 20 
-GROUP BY Course HAVING COUNT(*) > 2;
+GROUP BY Course HAVING COUNT(*) > 2; 
+
+CREATE VIEW player_list AS SELECT Course,Age FROM players;
+SELECT * FROM player_list;
